@@ -107,11 +107,42 @@ body {
   font-size: 1.25em;
   height: 100%;
 }
+header, main, footer {
+    display: flex;
+    padding-left: 0.5em;
+}
+
+header {
+    font-size: 3em;
+    align-items: center;
+    height:fit-content;
+}
+
+header h1 {
+    font-size: 4rem;
+}
+
+header, footer {
+    background-color: antiquewhite;
+    height: 80px;
+    width: 100%;
+}
+
+main {
+    background-color: rosybrown;
+    height: 250px;
+    width: 100%;
+    font-size: 1.5em;
+}
+footer {
+    justify-content: center;
+}
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -121,14 +152,15 @@ body {
   color: #853333;
   line-height: 1.5em;
   font-size: 1.6em;
-  background-color: darksalmon;
+  background-color: papayawhip;
   height:auto;
   display: flex;
-  width: 30%;
+  width: 25%;
+  margin: 1em 0;
   justify-content: center;
   align-items: center;
   padding: 0 0.5em 0 0.5em;
-  border: 0.25em solid #853333a0;
+  border: 0.2em solid #853333a0;
 }
 .div-1 {
     text-align: right;
@@ -140,6 +172,13 @@ body {
     text-align: left;
 }
 
+a {
+    color: #853333;
+}
+a:hover {
+    color: #853333;
+    background-color: yellow;
+}
 
 
 
